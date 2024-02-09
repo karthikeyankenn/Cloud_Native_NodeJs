@@ -1,0 +1,17 @@
+# bulletinboard-ads-ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bulletinboard-ads-ingress
+spec:
+  rules:
+    - host: bulletinboard-ads.c-00a2462.kyma.ondemand.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bulletinboard-ads
+                port:
+                  number: 80

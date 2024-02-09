@@ -1,0 +1,19 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+, "src/lib/migrate.ts", "src/lib/review-service.ts"  ],
+  "ts-node": {
+    "compilerOptions": {
+      "typeRoots": [
+        "./src/types",
+        "./node_modules/@types"
+      ]
+    },
+  }
+}

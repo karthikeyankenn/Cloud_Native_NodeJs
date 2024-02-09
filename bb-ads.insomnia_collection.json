@@ -1,0 +1,183 @@
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2023-09-20T07:37:06.081Z",
+	"__export_source": "insomnia.desktop.app:v2023.5.8",
+	"resources": [
+		{
+			"_id": "req_d96f9cffe39046a8a95a38f32fa6fa1c",
+			"parentId": "fld_2d24543a146741fe9013d6f62258a99a",
+			"modified": 1695195368283,
+			"created": 1695195368283,
+			"url": "localhost:3000/api/v1/ads/1",
+			"name": "deleteAd",
+			"description": "",
+			"method": "DELETE",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1695195368283,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_2d24543a146741fe9013d6f62258a99a",
+			"parentId": "wrk_f1f0e4c80c0a498eb7a11e85546ac8f9",
+			"modified": 1695195368274,
+			"created": 1695195368274,
+			"name": "bb-ads",
+			"description": "",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1695195368274,
+			"_type": "request_group"
+		},
+		{
+			"_id": "wrk_f1f0e4c80c0a498eb7a11e85546ac8f9",
+			"parentId": null,
+			"modified": 1695195375540,
+			"created": 1695195368271,
+			"name": "bb-ads",
+			"description": "",
+			"scope": "collection",
+			"_type": "workspace"
+		},
+		{
+			"_id": "req_e13415a118ac42c39668a4c1f938e606",
+			"parentId": "fld_2d24543a146741fe9013d6f62258a99a",
+			"modified": 1695195407403,
+			"created": 1695195368281,
+			"url": "localhost:3000/api/v1/ads/1",
+			"name": "updateAd",
+			"description": "",
+			"method": "PUT",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\r\n    \"title\": \"Updated Title\",\r\n    \"contact\": \"Updated Contact\"\r\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1695195368281,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_dd4aab960ae34852a52df93fcba021cf",
+			"parentId": "fld_2d24543a146741fe9013d6f62258a99a",
+			"modified": 1695195368279,
+			"created": 1695195368279,
+			"url": "localhost:3000/api/v1/ads/1",
+			"name": "getSingleAd",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1695195368279,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5847bf1289844c308db7498d4e6d82be",
+			"parentId": "fld_2d24543a146741fe9013d6f62258a99a",
+			"modified": 1695195368277,
+			"created": 1695195368277,
+			"url": "localhost:3000/api/v1/ads/",
+			"name": "getAllAds",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1695195368277,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fe27674521d94c0b91a26253b4f44c04",
+			"parentId": "fld_2d24543a146741fe9013d6f62258a99a",
+			"modified": 1695195414088,
+			"created": 1695195368276,
+			"url": "localhost:3000/api/v1/ads/",
+			"name": "createAd",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\r\n    \"title\": \"Keep calm and test\",\r\n    \"contact\": \"Average Tester\",\r\n    \"currency\": \"USD\",\r\n    \"price\": 900\r\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1695195368276,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "env_683927f29c2974e7200052bb530443c09bfadbb3",
+			"parentId": "wrk_f1f0e4c80c0a498eb7a11e85546ac8f9",
+			"modified": 1695195403683,
+			"created": 1695195403683,
+			"name": "Base Environment",
+			"data": {},
+			"dataPropertyOrder": null,
+			"color": null,
+			"isPrivate": false,
+			"metaSortKey": 1695195403683,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_683927f29c2974e7200052bb530443c09bfadbb3",
+			"parentId": "wrk_f1f0e4c80c0a498eb7a11e85546ac8f9",
+			"modified": 1695195403686,
+			"created": 1695195403686,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		}
+	]
+}
